@@ -6,4 +6,4 @@ test:
 
 production:
  adapter: redis
- url: redis://clarity-redis.iz6wli.0001.use1.cache.amazonaws.com:6379
+ url: clarity-redis.hryeu9.0001.usw2.cache.amazonaws.com:6379

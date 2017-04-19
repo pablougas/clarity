@@ -1,4 +1,3 @@
-
 <div class="loader-backdrop">           <!-- Pre Loader -->
     <div class="loader">
         <span class="dot dot1"></span>
@@ -19,7 +18,7 @@
                             <i class="ion-ios-more-outline"></i>
                         </button>
                         <a class="navbar-brand" href="index.html">
-                            <%= image_tag("logo.png", alt:"")%>
+                            <%= image_url("logo.png", alt:"") %>
                         </a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="navigation">
@@ -40,7 +39,7 @@
                                 <a href="#about" class="scroll-link">About</a>          <!-- Menu Item -->
                             </li>
                             <li>
-                                <a href="#pricing" class="btn-menu scroll-link">Login</a>          <!-- Menu Button -->
+                                <a href="#pricing" class="btn-menu scroll-link">Buy Now</a>          <!-- Menu Button -->
                             </li>
                         </ul>
                     </div>
@@ -50,54 +49,15 @@
     </nav>
 </header>
 
-<!-- Hero Section Style 8 -->
-<section class="hero-8" id="home" style="background-image: url(<%= image_url('colorful-couch.png') %>);height:750px;background-position: 50% 70%;background-size: cover;">
+<!-- Hero Section Style 3 -->
+<section class="hero-3" id="home" style="background-image: url(<%= image_url('flooded-house.png') %>);height:750px;background-position: 50% 80%;background-size: cover;">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 mt-40 mb-100">
+            <div class="col-md-6">
                 <div class="hero-box">
-                    <h1 class="hero-heading" style="">From Chaos To <span class="color1">Clarity.</span></h1>
-
+                    <h1 class="hero-heading">Not the waterfront home you imagined?</h1>
+                    <p class="hero-text">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                 </div>
-            </div>
-            <div class="col-md-4" style="margin-top:260px;">
-                <ul class="features">
-                    <li>
-                        <div class="icon">
-                            <i class="ion-ios-color-filter-outline"></i>
-                        </div>
-                        <div class="features-body">
-                            <h6 class="heading">See every Color</h6>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4" style="margin-top:260px;">
-                <ul class="features">
-                    <li>
-                        <div class="icon">
-                            <i class="ion-ios-speedometer-outline"></i>
-                        </div>
-                        <div class="features-body">
-                            <h6 class="heading">High Refresh Rate</h6>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4" style="margin-top:260px;">
-                <ul class="features">
-                    <li>
-                        <div class="icon">
-                            <i class="ion-ios-color-filter-outline"></i>
-                        </div>
-                        <div class="features-body">
-                            <h6 class="heading">See every Color</h6>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
@@ -182,7 +142,7 @@
                 </div>
             </div>
             <div class="col-md-6 mt-20">
-                <%= image_tag("flood-damage.png", class:"img-responsive", alt:"")%>
+                <%= image_tag("flood-damage.png", class:"img-responsive", alt:"") %>
             </div>
             <div class="col-md-6 mt-20">
                 <ul class="features">
@@ -239,7 +199,7 @@
                         <li><i class="ion-ios-star-outline"></i></li>
                     </ul>
                     <br/>
-                    <%= image_tag("rating-amazon.png", class:"rating-source", alt:"")%>
+                    <%= image_tag("rating-amazon.png", class:"rating-source", alt:"") %>
                     <div class="rating-count">9734 Reviews</div>
                 </div>
             </div>
@@ -253,7 +213,7 @@
                         <li><i class="ion-ios-star-outline"></i></li>
                     </ul>
                     <br/>
-                    <%= image_tag("rating-infibeam.png", class:"rating-source", alt:"")%>
+                    <%= image_tag("rating-infibeam.png", class:"rating-source", alt:"") %>
                     <div class="rating-count">2371 Reviews</div>
                 </div>
             </div>
@@ -267,7 +227,7 @@
                         <li><i class="ion-ios-star"></i></li>
                     </ul>
                     <br/>
-                    <%= image_tag("rating-gamestop.png", class:"rating-source", alt:"")%>
+                    <%= image_tag("rating-gamestop.png", class:"rating-source", alt:"") %>
                     <div class="rating-count">539 Reviews</div>
                 </div>
             </div>
@@ -286,7 +246,7 @@
                 </div>
             </div>
             <div class="col-md-6 mt-20">
-                <%= image_tag("boots-on-ground.png", class:"img-responsive", alt:"")%>
+                <%= image_tag("boots-on-ground.png", class:"img-responsive", alt:"") %>
             </div>
             <div class="col-md-6 mt-20">
                 <p class="lead">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.</p>
@@ -303,7 +263,7 @@
 </section>
 
 <!-- Section -->
-<section class="pt-100 pb-100" style="background-image: url(<%= image_url('light-bg.jpg')%>); background-position: center 30%; background-size: cover;">
+<section class="pt-100 pb-100" style="background-image: url(<%= image_url('light-bg.jpg') %>); background-position: center 30%; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -367,7 +327,7 @@
 </section>
 
 <!-- Section -->
-<!-- <section class="bgcolor3 pt-100 pb-80">
+<section class="bgcolor3 pt-100 pb-80">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -378,47 +338,47 @@
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-1.jpg", alt:"")%>
+                    <%= image_tag("logo-1.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-2.jpg", alt:"")%>
+                    <%= image_tag("logo-2.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-6.jpg", alt:"")%>
+                    <%= image_tag("logo-6.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-8.jpg", alt:"")%>
+                    <%= image_tag("logo-8.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-4.jpg", alt:"")%>
+                    <%= image_tag("logo-4.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-3.jpg", alt:"")%>
+                    <%= image_tag("logo-3.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-5.jpg", alt:"")%>
+                    <%= image_tag("logo-5.jpg", alt:"") %>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="logo-box">
-                    <%= image_tag("logo-7.jpg", alt:"")%>
+                    <%= image_tag("logo-7.jpg", alt:"") %>
                 </div>
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- Section -->
 <section class="pt-100 pb-100" id="testimonials" style="background-image: url(<%= image_url('product-bg-1.jpg') %>); background-position: center 20%">
@@ -436,7 +396,7 @@
                         <div>
                             <div class="testimonial-box">
                                 <div class="testimonial-img">
-                                    <%= image_tag("customer-2.jpg", class:"img-circle", alt:"")%>
+                                    <%= image_tag("customer-2.jpg", class:"img-circle", alt:"") %>
                                 </div>
                                 <span class="testimonial-by">
                                     Callum Grant
@@ -450,7 +410,7 @@
                         <div>
                             <div class="testimonial-box">
                                 <div class="testimonial-img">
-                                    <%= image_tag("customer-1.jpg", class:"img-circle", alt:"")%>
+                                    <%= image_tag("customer-1.jpg", class:"img-circle", alt:"") %>
                                 </div>
                                 <span class="testimonial-by">
                                     Jonathan Andre
@@ -461,6 +421,80 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section -->
+<section class="pt-100 pb-80 bgcolor3" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-box">
+                    <h2>Affordable Plans</h2>
+                    <p class="sub-heading">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <div class="plan-name">Student</div>
+                        <div class="price">$199</div>
+                        <div class="plan-tenure">One time cost</div>
+                    </div>
+                    <hr/>
+                    <div class="pricing-body">
+                        <ul>
+                            <li><i class="ion-ios-cloud-outline"></i> 20GB Cloud storage</li>
+                            <li><i class="ion-ios-gear-outline"></i> On-site free service</li>
+                            <li><i class="ion-ios-locked-outline"></i> 2 year insurance</li>
+                            <li><i class="ion-ios-shuffle"></i> 2.6GHZ Processor</li>
+                            <li><i class="ion-ios-videocam-outline"></i> Access to Movies</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn btn-primary">Get this</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-box popular">
+                    <div class="pricing-header">
+                        <div class="plan-name">Startup</div>
+                        <div class="price">$249</div>
+                        <div class="plan-tenure">One time cost</div>
+                    </div>
+                    <hr/>
+                    <div class="pricing-body">
+                        <ul>
+                            <li><i class="ion-ios-cloud-outline"></i> 20GB Cloud storage</li>
+                            <li><i class="ion-ios-gear-outline"></i> On-site free service</li>
+                            <li><i class="ion-ios-locked-outline"></i> 2 year insurance</li>
+                            <li><i class="ion-ios-shuffle"></i> 2.6GHZ Processor</li>
+                            <li><i class="ion-ios-videocam-outline"></i> Access to Movies</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn btn-primary">Get this</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-box">
+                    <div class="pricing-header">
+                        <div class="plan-name">Business</div>
+                        <div class="price">$299</div>
+                        <div class="plan-tenure">One time cost</div>
+                    </div>
+                    <hr/>
+                    <div class="pricing-body">
+                        <ul>
+                            <li><i class="ion-ios-cloud-outline"></i> 20GB Cloud storage</li>
+                            <li><i class="ion-ios-gear-outline"></i> On-site free service</li>
+                            <li><i class="ion-ios-locked-outline"></i> 2 year insurance</li>
+                            <li><i class="ion-ios-shuffle"></i> 2.6GHZ Processor</li>
+                            <li><i class="ion-ios-videocam-outline"></i> Access to Movies</li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn btn-primary">Get this</a>
                 </div>
             </div>
         </div>
@@ -555,28 +589,28 @@
             </div>
             <div class="col-md-3">
                 <div class="member-box">
-                    <%= image_tag("team-1.jpg", class:"img-rounded", alt:"")%>
+                    <%= image_tag("team-1.jpg", class:"img-rounded", alt:"") %>
                     <h6 class="heading">Nandy Puerto</h6>
                     <span class="text-muted">CEO, Ambar sysrems</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="member-box">
-                    <%= image_tag("team-2.jpg", class:"img-rounded", alt:"")%>
+                    <%= image_tag("team-2.jpg", class:"img-rounded", alt:"") %>
                     <h6 class="heading">Josh Harding</h6>
                     <span class="text-muted">Business Op, Ambar sysrems</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="member-box">
-                    <%= image_tag("team-3.jpg", class:"img-rounded", alt:"")%>
+                    <%= image_tag("team-3.jpg", class:"img-rounded", alt:"") %>
                     <h6 class="heading">Cameron Rowley</h6>
                     <span class="text-muted">Operations, Ambar sysrems</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="member-box">
-                    <%= image_tag("team-2.jpg", class:"img-rounded", alt:"")%>
+                    <%= image_tag("team-2.jpg", class:"img-rounded", alt:"") %>
                     <h6 class="heading">Harrison Walton</h6>
                     <span class="text-muted">Support, Ambar sysrems</span>
                 </div>
@@ -586,86 +620,25 @@
 </section>
 
 <!-- Section -->
-<section class="pt-100 pb-100" style="background-image: url(<%= image_url('product-bg-2.jpg')%>); background-position: center center;">
+<section class="pt-100 pb-100" style="background-image: url(<%= image_url('product-bg-2.jpg') %>); background-position: center center;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div>
-                    <h3 class="white">Shoot us a Message</h3>
+                    <h3 class="white">Subscribe to Our Mailing List</h3>
                 </div>
                 <p class="white">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p>
                 <br/>
                 <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input class="form-control" id="example-text-input-inline" type="text" placeholder="Name">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input class="form-control" id="example-text-input-inline" type="text" placeholder="Phone">
-                        </div>
-                    </div>
                     <div class="form-group">
-                        <input class="form-control" id="example-text-input-inline" type="text" placeholder="Leave your message here">
+                        <input class="form-control" id="example-text-input-inline" type="text" placeholder="Leave your mail id here">
                     </div>
-                    <button class="btn btn-primary" type="submit">Contact</button>
+                    <button class="btn btn-primary" type="submit">Subscribe!</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Footer -->
-<div class="footer">
-    <div class="footer-pri">            <!-- Primary Footer -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-box about-box">
-                        <%= image_tag("logo.png", alt:"")%>         <!-- Replace woth your logo -->
-                        <br/><br/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-box links-box">
-                        <h5 class="heading">Quick Links</h5>
-                        <ul>
-                            <li><a href="">About the product</a></li>
-                            <li><a href="">Usage Policies</a></li>
-                            <li><a href="">How it works</a></li>
-                            <li><a href="">Locate store</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-box social-box">
-                        <h5 class="heading">Talk to us</h5>
-                        <ul class="contact">
-                            <li>+00 987654321</li>
-                            <li>support@wwsthemes.com</li>
-                        </ul>
-                        <hr/>
-                        <ul class="social">
-                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
-                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
-                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href=""><i class="ion-social-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-sec">            <!-- Secondary Footer -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <span class="copyright">&copy; 2017. All rights reserved</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Back To Top Button -->
 <a href="#home" id="backHome" class="scroll-link"><i class="ion-ios-home-outline"></i></a>

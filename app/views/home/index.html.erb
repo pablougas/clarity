@@ -22,28 +22,19 @@
                         </a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="navigation">
-                        <ul class="nav navbar-nav">          <!-- Menu -->
+                        <ul class="nav navbar-nav">
                             <li>
                                 <a href="#features" class="scroll-link">Services</a>
                             </li>
-                            <!-- <li> -->
-                                <!-- <a href="#ratings" class="scroll-link">Ratings</a>
-                            </li>
-                            <li>
-                                <a href="#process" class="scroll-link">Process</a>
-                            </li> -->
-                            <!-- <li>
-                                <a href="#testimonials" class="scroll-link">Testimonials</a>
-                            </li> -->
                             <li>
                                 <a href="#about" class="scroll-link">About</a>
                             </li>
                             <li>
                                 <a href="#contact" class="scroll-link">Contact</a>
                             </li>
-                            <li>
-                                <a href="" class="btn-menu scroll-link">Login</a>
-                            </li>
+                            <!-- <li>
+                                <a href="#" class="btn-menu scroll-link">Login</a>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -53,13 +44,13 @@
 </header>
 
 <!-- Hero Section Style 3 -->
-<section class="hero-3" id="home" style="background-image: url(<%= image_url('gray-couch.jpg') %>);height:750px;background-position: 50% 40%;background-size: cover;">
+<section class="hero-3" id="home" style="background-image: url(<%= image_url('colorful-couch.jpg') %>);height:750px;background-position: 50% 40%;background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-box">
-                    <h1 class="hero-heading text-center" style="color:#3f3f3f;margin-top:170px;">Not the waterfront home you imagined?</h1>
-                    <p class="hero-text text-center hidden-xs hidden-sm" style="color:#3f3f3f;">Our goal is to simplify the claims process, providing a clear path to closure for the insured.</p>
+                    <h1 class="hero-heading text-center">Not the waterfront home you imagined?</h1>
+                    <p class="hero-text text-center hidden-xs hidden-sm">Our goal is to simplify the claims process, providing a clear path to closure for the insured.</p>
                 </div>
             </div>
         </div>
@@ -254,12 +245,12 @@
             <div class="col-md-6 mt-20">
                 <!-- <p class="lead">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.</p> -->
                 <ul class="list-default">
-                    <li><%= link_to "Information for Policy Holders", "https://www.fema.gov/information-policyholders" %></li>
-                    <li><%= link_to "NFIP Technical Support Hotline", "https://www.fema.gov/national-flood-insurance-program-technical-support-hotline" %></li>
-                    <li><%= link_to "Standard Flood Insurance Policy Forms", "https://www.fema.gov/national-flood-insurance-program/standard-flood-insurance-policy-forms" %></li>
-                    <li><%= link_to "Disaster Recovery Centers", "https://www.fema.gov/disaster-recovery-centers" %></li>
-                    <li><%= link_to "Information for Adjusters", "https://www.fema.gov/information-claims-adjusters" %></li>
-                    <li><%= link_to "National Flood Insurance Program", "https://www.fema.gov/National-Flood-insurance-program" %></li>
+                    <li><%= link_to "Information for Policy Holders", "https://www.fema.gov/information-policyholders", target:"_blank" %></li>
+                    <li><%= link_to "NFIP Technical Support Hotline", "https://www.fema.gov/national-flood-insurance-program-technical-support-hotline", target:"_blank" %></li>
+                    <li><%= link_to "Standard Flood Insurance Policy Forms", "https://www.fema.gov/national-flood-insurance-program/standard-flood-insurance-policy-forms", target:"_blank" %></li>
+                    <li><%= link_to "Disaster Recovery Centers", "https://www.fema.gov/disaster-recovery-centers", target:"_blank" %></li>
+                    <li><%= link_to "Information for Adjusters", "https://www.fema.gov/information-claims-adjusters", target:"_blank" %></li>
+                    <li><%= link_to "National Flood Insurance Program", "https://www.fema.gov/National-Flood-insurance-program", target:"_blank" %></li>
                 </ul>
                 <!-- <a href="" class="btn btn-primary">Read More</a> -->
             </div>
@@ -627,7 +618,7 @@
 
 
 <!-- Section -->
-<section class="pt-100 pb-100" style="background-image: url(<%= image_url('colorful-couch.jpg') %>); background-position: center center;background-position: 50% 40%;background-size: cover;" id="contact">
+<section class="pt-100 pb-100" style="background-image: url(<%= image_url('gray-couch.jpg') %>); background-position: center center;background-position: 50% 40%;background-size: cover;" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="background-color: rgba(0,0,0,.78); padding:50px; border-radius:4px;">

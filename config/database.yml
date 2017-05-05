@@ -15,5 +15,5 @@ production:
     database: <%= ENV['RDS_DB_NAME'] %>
     username: <%= ENV['RDS_USERNAME'] %>
     password: <%= ENV['RDS_PASSWORD'] %>
-    host: claritydev.cr0ishq3kdtu.us-west-2.rds.amazonaws.com:5432
+    host: <%= ENV['RDS_HOSTNAME'] %>
     port: <%= ENV['RDS_PORT'] %>

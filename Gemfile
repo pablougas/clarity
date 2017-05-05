@@ -7,6 +7,7 @@ end
 
 # setup meta tags
 gem 'meta-tags'
+gem 'sidekiq'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'

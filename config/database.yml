@@ -1,17 +1,18 @@
 default: &default
     adapter: postgresql
+    encoding: unicode
+    # For details on connection pooling, see rails configuration guide
+    # http://guides.rubyonrails.org/configuring.html#database-pooling
     pool: 5
-    timeout: 5000
+
 
 development:
     <<: *default
-    encoding: unicode
     database: clarity_db
     host: localhost
 
 production:
     <<: *default
-    encoding: utf8
     database: <%= ENV['RDS_DB_NAME'] %>
     username: <%= ENV['RDS_USERNAME'] %>
     password: <%= ENV['RDS_PASSWORD'] %>

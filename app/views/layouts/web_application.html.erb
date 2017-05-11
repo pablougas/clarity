@@ -4,15 +4,16 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <meta name="description" content="Bootstrap Admin App + Ruby on Rails">
-   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
-   <title>Angle - Bootstrap Admin Template</title>
+   <meta name="description" content="Clarity Insurance Claims Dashboard">
+   <meta name="keywords" content="insurance, app, claims, processing, adjusting, claim, flood">
+   <title>Clarity </title>
    <!-- =============== VENDOR STYLES ===============-->
    <%= stylesheet_link_tag 'base' %>
    <!-- =============== VIEW VENDOR STYLES ===============-->
-   <%= stylesheet_link_tag params[:controller] %>
+   <%= stylesheet_link_tag "application", params[:controller], :media => "all" %>
+   <%= javascript_include_tag "application", params[:controller] %>
    <!-- =============== APP STYLES ===============-->
-   <%= stylesheet_link_tag 'application', media: 'all', id: "maincss" %>
+   <%= stylesheet_link_tag 'app', media: 'all' %>
    <%= csrf_meta_tags %>
 </head>
 

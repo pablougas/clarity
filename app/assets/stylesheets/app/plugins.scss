@@ -1,11 +1,11 @@
 // ========================================================================
 //   Component: plugins.less
-// - User this stylesheet to include single css styles and fixes 
+// - User this stylesheet to include single css styles and fixes
 //   for plugins
 // ========================================================================
 
-@import '../bootstrap/bootstrap/mixins/_buttons';
- 
+@import 'bootstrap/bootstrap/mixins/_buttons';
+
 /**
  * Bootstrap Slider
  */
@@ -209,4 +209,3 @@ body {
 
 
 } // body
-

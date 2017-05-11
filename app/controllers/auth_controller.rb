@@ -1,5 +1,5 @@
 class AuthController < ApplicationController
-    layout 'web_application'
+    layout 'login'
     def new
     end
 

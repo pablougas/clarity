@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mortgagee_type: MyString
+  first: false
+  name: MyString
+  first: MyString
+  middle: MyString
+  last: MyString
+  street_one: MyString
+  street_two: MyString
+  city: MyString
+  state: MyString
+  zip: MyString
+
+two:
+  mortgagee_type: MyString
+  first: false
+  name: MyString
+  first: MyString
+  middle: MyString
+  last: MyString
+  street_one: MyString
+  street_two: MyString
+  city: MyString
+  state: MyString
+  zip: MyString

@@ -8,12 +8,10 @@
    <meta name="keywords" content="insurance, app, claims, processing, adjusting, claim, flood">
    <title>Clarity </title>
    <!-- =============== VENDOR STYLES ===============-->
-   <%= stylesheet_link_tag 'base' %>
+   <%= stylesheet_link_tag 'app', media: 'all' %>
    <!-- =============== VIEW VENDOR STYLES ===============-->
    <%= stylesheet_link_tag "application", params[:controller], :media => "all" %>
-   <%= javascript_include_tag "application", params[:controller] %>
    <!-- =============== APP STYLES ===============-->
-   <%= stylesheet_link_tag 'app', media: 'all' %>
    <%= csrf_meta_tags %>
 </head>
 
@@ -44,14 +42,11 @@
       </footer>
    </div>
    <!-- =============== VENDOR SCRIPTS ===============-->
-   <%= javascript_include_tag 'base' %>
-   <!-- =============== VIEW VENDOR SCRIPTS ===============-->
-   <%= javascript_include_tag params[:controller] %>
-   <!-- =============== APP SCRIPTS ===============-->
-   <%= javascript_include_tag 'application' %>
 
    <%= yield :body_area %>
 
 </body>
+<%= javascript_include_tag 'base' %>
+<%= javascript_include_tag "application", params[:controller] %>
 
 </html>

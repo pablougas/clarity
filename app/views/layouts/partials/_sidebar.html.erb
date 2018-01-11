@@ -16,7 +16,7 @@
                   </div>
                   <!-- Name and Job-->
                   <div class="user-block-info">
-                     <span class="user-block-name">Hello, Mike</span>
+                     <span class="user-block-name">Hello, <%= current_user.first %></span>
                      <span class="user-block-role">Designer</span>
                   </div>
                </div>
@@ -27,49 +27,34 @@
          <li class="nav-heading">
             <span>Main Navigation</span>
          </li>
-         <li class="<%= 'active' if controller?('dashboard')%>">
-            <a href="#dashboard" title="Dashboard" data-toggle="collapse">
+         <li class="<%= 'active' if controller?('dashboards')%>">
+            <%= link_to dashboards_path do %>
                <div class="label label-info pull-right">3</div>
                <em class="icon-speedometer"></em>
                <span data-localize="sidebar.nav.DASHBOARD">Dashboard</span>
-            </a>
-            <ul id="dashboard" class="nav sidebar-subnav collapse">
-               <li class="sidebar-subnav-header">Dashboard</li>
-               <li class="<%= 'active' if controller?('dashboard') && action?('dashboard_v1') %>">
-                  <a href="/dashboard/dashboard_v1" title="Dashboard v1">
-                     <span>Dashboard v1</span>
-                  </a>
-               </li>
-               <li class="<%= 'active' if controller?('dashboard') && action?('dashboard_v2') %>">
-                  <a href="/dashboard/dashboard_v2" title="Dashboard v2">
-                     <span>Dashboard v2</span>
-                  </a>
-               </li>
-               <li class="<%= 'active' if controller?('dashboard') && action?('dashboard_v3') %>">
-                  <a href="/dashboard/dashboard_v3" title="Dashboard v3">
-                     <span>Dashboard v3</span>
-                  </a>
-               </li>
-            </ul>
-         </li>
-         <li class="<%= 'active' if controller?('widgets') && action?('index') %>">
-            <a href="/widgets" title="Widgets">
-               <div class="label label-success pull-right">30</div>
-               <em class="icon-grid"></em>
-               <span data-localize="sidebar.nav.WIDGETS">Widgets</span>
-            </a>
+            <% end %>
          </li>
          <!-- Layouts -->
-         <li>
+         <li class="<%= 'active' if controller?('claims')%>">
             <a href="#layout" title="Layouts" data-toggle="collapse">
                <em class="icon-layers"></em>
-               <span>Layouts</span>
+               <span>Claims</span>
             </a>
-            <ul id="layout" class="nav sidebar-subnav collapse">
-               <li class="sidebar-subnav-header">Layouts</li>
+            <ul id="layout" class="nav sidebar-subnav collapse <%= 'in' if controller?('claims')%>">
+               <li class="sidebar-subnav-header">Claims</li>
+               <li>
+                  <%= link_to claims_path do %>
+                     <span>New Claims</span>
+                  <% end %>
+               </li>
                <li>
                   <a href="/dashboard/dashboard_h" title="Dashboard Horizontal">
-                     <span>Horizontal</span>
+                     <span>Active Claims</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="/dashboard/dashboard_h" title="Dashboard Horizontal">
+                     <span>Closed Claims</span>
                   </a>
                </li>
             </ul>

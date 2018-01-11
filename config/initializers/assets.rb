@@ -14,6 +14,7 @@ Rails.application.config.assets.precompile += [
     "app.scss",
     "auth.scss",
     "base.scss",
+    "claims.scss",
     "dashboards.scss",
     "home.scss"
 ]
@@ -21,6 +22,7 @@ Rails.application.config.assets.precompile += [
 Rails.application.config.assets.precompile += [
     "auth.js",
     "base.js",
+    "claims.js",
     "dashboards.js",
     "home.js"
 ]

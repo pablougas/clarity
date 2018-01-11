@@ -1,15 +1,3 @@
-/*!
- *
- * Angle - Bootstrap Admin App + Ruby on Rails
- *
- * Version: 3.7
- * Author: @themicon_co
- * Website: http://themicon.co
- * License: https://wrapbootstrap.com/help/licenses
- *
- */
-
-
 (function(window, document, $, undefined) {
 
     if (typeof $ === 'undefined') {

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
 
+  resources :addresses
+  resources :contacts
+  resources :client_files
     get 'home/index'
 
     get '/login' => 'auth#new'

@@ -3,7 +3,7 @@ class DashboardsController < ApplicationController
     before_filter :authorize
 
     def index
-
+        @policies = Policy.all
     end
 
 end

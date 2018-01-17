@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170530185058) do
+ActiveRecord::Schema.define(version: 20180116150739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "addresses", force: :cascade do |t|
+    t.string   "street"
+    t.string   "street_2"
+    t.string   "suite"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "primary"
+    t.integer  "client_file_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["client_file_id"], name: "index_addresses_on_client_file_id", using: :btree
+  end
 
   create_table "adjusters", force: :cascade do |t|
     t.string   "company"
@@ -90,6 +104,24 @@ ActiveRecord::Schema.define(version: 20170530185058) do
     t.decimal  "icc_ded",           precision: 14, scale: 2
     t.decimal  "icc_res",           precision: 14, scale: 2
     t.index ["policy_id"], name: "index_claims_on_policy_id", using: :btree
+  end
+
+  create_table "client_files", force: :cascade do |t|
+    t.string   "client_number"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "primary"
+    t.integer  "client_file_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["client_file_id"], name: "index_contacts_on_client_file_id", using: :btree
   end
 
   create_table "examiners", force: :cascade do |t|
@@ -187,9 +219,11 @@ ActiveRecord::Schema.define(version: 20170530185058) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "addresses", "client_files"
   add_foreign_key "adjusters", "claims"
   add_foreign_key "agents", "claims"
   add_foreign_key "claims", "policies"
+  add_foreign_key "contacts", "client_files"
   add_foreign_key "examiners", "claims"
   add_foreign_key "insureds", "policies"
   add_foreign_key "insurers", "policies"

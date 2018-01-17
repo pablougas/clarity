@@ -1,0 +1,16 @@
+class CreateAddresses < ActiveRecord::Migration[5.0]
+  def change
+    create_table :addresses do |t|
+      t.string :street
+      t.string :street_2
+      t.string :suite
+      t.string :city
+      t.string :state
+      t.string :zip
+      t.string :primary
+      t.references :client_file, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end

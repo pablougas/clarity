@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-    get 'home/index'
+    get '/login' => 'sessions#new'
+    post '/login' => 'sessions#create'
+    get '/logout' => 'sessions#destroy'
 
+    resources :home, only: [:index], path: ''
+    resources :dashboards, only: [:index], as: 'dashboard'
 
-    root 'home#index'
+    resources :users
+
+    root 'dashboards#index'
 end
